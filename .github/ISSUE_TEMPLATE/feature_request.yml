@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest something PaceStreak should do.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PaceStreak is early and opinionated: it is a consistency tracker, not a
+        full training log. Requests that pull it toward being a general fitness
+        app may be declined on scope, not on merit.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation you are in, not the feature you imagine. The best solution is often not the one first suggested.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like it to do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What do you do today instead?
+      description: Existing workarounds tell us how much this actually hurts.

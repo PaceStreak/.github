@@ -1,0 +1,45 @@
+name: Bug report
+description: Something is broken or behaves incorrectly.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check [status.pacestreak.com](https://status.pacestreak.com) first — if a
+        service is already down, this is probably a symptom of that rather than
+        a separate bug.
+
+        **Security problems do not belong here.** Email hello@pacestreak.com.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps. This is the single most useful thing you can provide — a screenshot without steps is very hard to act on.
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. Observe …
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://www.pacestreak.com/…
+  - type: input
+    id: env
+    attributes:
+      label: Browser and OS
+      placeholder: Firefox 141 on Linux / Safari on iOS 19
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Console errors, screenshots, network conditions.
