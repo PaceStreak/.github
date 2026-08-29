@@ -35,6 +35,6 @@ These are deliberate, not findings:
   domain.
 - **`status.pacestreak.com` is served from GitHub Pages** and is intentionally
   public, including full uptime history.
-- **The landing page loads no third-party scripts.** Its CSP is
+- **The public site loads no third-party scripts.** Its CSP is
   `default-src 'self'`. If you find something loading from elsewhere, that *is*
   worth reporting.

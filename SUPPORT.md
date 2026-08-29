@@ -4,7 +4,7 @@
 
 1. Check **[status.pacestreak.com](https://status.pacestreak.com)** first. If a
    service is already down, what you are seeing is probably a symptom of that.
-2. Search [existing issues](https://github.com/PaceStreak/landing/issues) — it
+2. Search [existing issues](https://github.com/PaceStreak/web/issues) — it
    may already be known.
 3. Open a bug report with the steps to reproduce.
 

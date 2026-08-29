@@ -16,13 +16,17 @@ can go straight to a pull request.
 
 | You want to change | Go to |
 | --- | --- |
-| The frontend application | [`web`](https://github.com/PaceStreak/web) — **not built yet** |
-| The live landing page at `www.pacestreak.com` | [`landing`](https://github.com/PaceStreak/landing) |
+| The public site at `www.pacestreak.com` | [`web`](https://github.com/PaceStreak/web) |
+| The product itself | [`app`](https://github.com/PaceStreak/app) — **not built yet** |
+| The backend | [`api`](https://github.com/PaceStreak/api) — **not built yet** |
+| The build log at `blog.pacestreak.com` | [`blog`](https://github.com/PaceStreak/blog) |
 | Monitoring or the status page | [`status`](https://github.com/PaceStreak/status) |
+| DNS, Cloudflare, runbooks | [`infra`](https://github.com/PaceStreak/infra) |
 | This profile or these shared files | [`.github`](https://github.com/PaceStreak/.github) |
 
-Do not build the application in `landing`. It is a placeholder and will be
-deleted.
+**Do not build the product in `web`.** That site is deliberately static and
+must stay free of any auth dependency, so a product outage cannot take down the
+page that explains the product. Anything signed-in goes in `app`.
 
 ## Pull requests
 
@@ -41,12 +45,13 @@ comment density, its idioms.
 
 Two things that are not negotiable:
 
-- **No third-party runtime dependencies on the landing page.** Its CSP is
-  `default-src 'self'` and it is enforced in production. If you add a font CDN
-  or an analytics script it will be blocked, and blocked silently.
-- **Asset URLs must be cache-busted.** Cloudflare Pages serves `/assets/*` with
-  a multi-hour `Cache-Control` that a `_headers` file cannot override. `landing`
-  has `stamp.py` for this; run it before deploying.
+- **No third-party runtime dependencies on any site.** Every one of them ships
+  `default-src 'self'`, enforced in production. If you add a font CDN or an
+  analytics script it will be blocked, and blocked silently.
+- **Never hand-roll cache busting.** `web`, `app` and `blog` build with Astro,
+  which content-hashes asset filenames. The hand-rolled script this rule used to
+  point at was removed for a reason: forgetting to run it once shipped new
+  markup against a four-hour-old cached stylesheet.
 
 ## Reporting bugs
 
