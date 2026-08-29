@@ -19,7 +19,7 @@ can go straight to a pull request.
 | The public site at `www.pacestreak.com` | [`web`](https://github.com/PaceStreak/web) |
 | The product itself | [`app`](https://github.com/PaceStreak/app) — **not built yet** |
 | The backend | [`api`](https://github.com/PaceStreak/api) — **not built yet** |
-| The build log at `blog.pacestreak.com` | [`blog`](https://github.com/PaceStreak/blog) |
+| The blog at `blog.pacestreak.com` | [`blog`](https://github.com/PaceStreak/blog) |
 | Monitoring or the status page | [`status`](https://github.com/PaceStreak/status) |
 | DNS, Cloudflare, runbooks | [`infra`](https://github.com/PaceStreak/infra) |
 | This profile or these shared files | [`.github`](https://github.com/PaceStreak/.github) |
