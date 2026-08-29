@@ -47,6 +47,8 @@ things, not a launch announcement. Early access goes out in batches — mail
 | [`web`](https://github.com/PaceStreak/web) | The frontend application. **Reserved — not built yet.** |
 | [`landing`](https://github.com/PaceStreak/landing) | The temporary landing page currently serving `www.pacestreak.com`. Retired once `web` ships. |
 | [`status`](https://github.com/PaceStreak/status) | Uptime monitoring and the public status page. Powered by Upptime — GitHub Actions, Issues and Pages. |
+| [`api`](https://github.com/PaceStreak/api) | The backend, at `api.pacestreak.com`. **Reserved — not built yet.** |
+| [`infra`](https://github.com/PaceStreak/infra) | DNS, Cloudflare, deployment topology and the runbook. Documentation, not automation. |
 | [`.github`](https://github.com/PaceStreak/.github) | This profile, and the org-wide community health files. |
 
 ## Infrastructure notes
