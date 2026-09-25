@@ -24,20 +24,25 @@ abandon than a to-do list.
 
 ## What makes it different
 
-- **Streaks that respect rest.** Rest is training. You set the weekly target, and
-  planned recovery days count as kept, not broken. A deload week should not cost
-  you the streak you have built.
+- **Streaks that respect rest.** Streaks count kept weeks against a target you
+  set, so rest days are free. Freezes are earned, one missed week a month can be
+  repaired, and an injury pause holds the streak while you recover.
 - **Ten-second logging.** The fastest log wins. Anything slower gets skipped when
   you are tired, and skipped logs are what actually kill streaks.
 - **Any discipline.** Barbell, trail, tarmac or wall — one chain across
   everything, or a separate chain per discipline.
-- **Your data, exportable.** Full JSON and CSV export from day one. It is your
-  training history; you should be able to walk out with it.
+- **Rewards for showing up, never for lifting more.** XP, badges, challenges and
+  opt-in leaderboards count attendance. Nothing rewards load, volume or body
+  weight.
+- **Works offline.** Logs save on the phone first and sync later.
+- **Your data, exportable.** JSON, CSV and calendar export, import from a watch
+  (GPX, FIT, CSV), and deletion that deletes.
 
 ## Status
 
-Early, and built in the open. The repositories here are the honest state of
-things, not a launch announcement. Early access goes out in batches — mail
+The product (API and app) is built and tested but not launched yet; where the
+API is hosted is the open decision. The [blog](https://blog.pacestreak.com)
+covers how each part was built. Early access goes out in batches — mail
 [hello@pacestreak.com](mailto:hello@pacestreak.com) to be in the next one.
 
 ## Repositories
@@ -45,9 +50,9 @@ things, not a launch announcement. Early access goes out in batches — mail
 | Repo | What it is |
 | --- | --- |
 | [`web`](https://github.com/PaceStreak/web) | The public site at `www.pacestreak.com`. Astro, static, no login. |
-| [`app`](https://github.com/PaceStreak/app) | The product itself, at `app.pacestreak.com`. **Not built yet.** |
+| [`app`](https://github.com/PaceStreak/app) | The product itself, at `app.pacestreak.com`. React PWA, built, not yet deployed. |
 | [`status`](https://github.com/PaceStreak/status) | Uptime monitoring and the public status page. Powered by Upptime — GitHub Actions, Issues and Pages. |
-| [`api`](https://github.com/PaceStreak/api) | The backend, at `api.pacestreak.com`. **Not built yet.** |
+| [`api`](https://github.com/PaceStreak/api) | The backend, at `api.pacestreak.com`. FastAPI, built, not yet deployed. |
 | [`blog`](https://github.com/PaceStreak/blog) | The blog at `blog.pacestreak.com`. Astro, deployed on Cloudflare Pages. |
 | [`infra`](https://github.com/PaceStreak/infra) | DNS, Cloudflare, deployment topology and the runbook. Documentation, not automation. |
 | [`.github`](https://github.com/PaceStreak/.github) | This profile, and the org-wide community health files. |
