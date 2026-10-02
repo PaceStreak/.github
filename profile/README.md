@@ -26,12 +26,14 @@ of filled squares is a much harder thing to abandon than a to-do list.
 ## What it does
 
 - **Habits and streaks that respect rest.** Kept weeks against your own target.
-  Earned freezes, a monthly repair, pauses for injury or travel, and an optional
+  Earned freezes, a monthly repair, pauses for injury or travel (for everything
+  or one habit), habits planned for chosen weekdays, and an optional
   whole-life streak. Habits can be ticked, counted or timed, or broken with clean
   days where a slip is logged, never punished.
 - **Training, when you want detail.** Ten-second logging for 11 disciplines, or
   sets, reps and RPE against 283 exercises, with 24 starter routines, 22 plans, race build-ups,
-  training blocks and personal records.
+  training blocks, a two-way plate calculator and personal records. Import from
+  Strong, Hevy and FitNotes.
 - **Food, without the diet app.** Meals, macros, recipes and barcode lookup, and
   an energy-burn estimate from your own food log and weigh-ins.
 - **Insights without AI.** Patterns across sleep, mood, habits, training and food,
@@ -41,7 +43,8 @@ of filled squares is a much harder thing to abandon than a to-do list.
   routines you step through, reminders with Done and Snooze buttons, search, a
   one-day view, and Undo with a 30-day trash.
 - **Private by design.** Habits, food, body and journal are visible to nobody else,
-  ever. Social features (follows, groups, challenges, opt-in leaderboards) rank
+  ever. Social features (follows, preset reactions, groups, coaching, challenges,
+  opt-in leaderboards) rank
   turning up, never which habit or how much.
 - **Yours to take.** Works offline, installs as an app, exports to JSON, CSV and
   calendar, imports from watches and other habit apps, and deletes for real.
