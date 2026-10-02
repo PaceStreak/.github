@@ -30,7 +30,7 @@ of filled squares is a much harder thing to abandon than a to-do list.
   whole-life streak. Habits can be ticked, counted or timed, or broken with clean
   days where a slip is logged, never punished.
 - **Training, when you want detail.** Ten-second logging for 11 disciplines, or
-  sets, reps and RPE against 78 exercises, with routines, plans, race build-ups,
+  sets, reps and RPE against 84 exercises, with routines, plans, race build-ups,
   training blocks and personal records.
 - **Food, without the diet app.** Meals, macros, recipes and barcode lookup, and
   an energy-burn estimate from your own food log and weigh-ins.
