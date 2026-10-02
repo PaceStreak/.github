@@ -32,7 +32,23 @@ body:
     id: url
     attributes:
       label: URL
-      placeholder: https://www.pacestreak.com/…
+      placeholder: https://app.pacestreak.com/…
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - The app (app.pacestreak.com, or installed)
+        - The website (www.pacestreak.com)
+        - The blog
+        - The status page
+    validations:
+      required: true
+  - type: input
+    id: installed
+    attributes:
+      label: Installed or in a browser tab?
+      description: Some things (pull to refresh, the icon badge, sharing into the app) only exist in the installed app.
   - type: input
     id: env
     attributes:

@@ -21,9 +21,10 @@ taking too long, say so — an agreed date is better than a surprise.
 | In scope | Out of scope |
 | --- | --- |
 | `pacestreak.com` and `www.pacestreak.com` | Third-party services (GitHub, Cloudflare, Zoho) — report to them |
-| `api.pacestreak.com`, when it exists | Findings from automated scanners with no demonstrated impact |
-| `status.pacestreak.com` | Missing headers with no exploitable consequence |
+| `app.pacestreak.com` and `api.pacestreak.com` | Findings from automated scanners with no demonstrated impact |
+| `status.pacestreak.com` and `blog.pacestreak.com` | Missing headers with no exploitable consequence |
 | Code in any repository in this organization | Social engineering, physical attacks, denial of service |
+| | Third-party providers named on the [privacy page](https://www.pacestreak.com/privacy) — report to them |
 
 ## What is already known
 
@@ -35,6 +36,15 @@ These are deliberate, not findings:
   domain.
 - **`status.pacestreak.com` is served from GitHub Pages** and is intentionally
   public, including full uptime history.
-- **The public site loads no third-party scripts.** Its CSP is
-  `default-src 'self'`. If you find something loading from elsewhere, that *is*
-  worth reporting.
+- **The sites load no third-party scripts.** Every CSP is `default-src 'self'`.
+  The one exception is Cloudflare Turnstile on the app's sign-up, sign-in and
+  password-reset forms. Anything else loading from elsewhere *is* worth
+  reporting.
+- **Inline stylesheets are allowed by hash.** `www` inlines its stylesheet and
+  lists its SHA-256 in `style-src`; there is no `'unsafe-inline'` for scripts
+  anywhere. The blog allows inline styles (syntax highlighting needs them) but
+  not inline scripts.
+- **Some links work without a session, by design, and are signed.** One-click
+  email unsubscribe, and the Done and Snooze buttons on habit reminders, carry
+  an HMAC scoped to one user, one action and (for reminders) one habit and day,
+  with an expiry. A forged or altered link is a 403.

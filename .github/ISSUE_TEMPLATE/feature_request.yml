@@ -5,9 +5,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        PaceStreak is early and opinionated: it is a consistency tracker, not a
-        full training log. Requests that pull it toward being a general fitness
-        app may be declined on scope, not on merit.
+        PaceStreak is opinionated: it rewards showing up, never doing more, and
+        it never shows anyone's habits to anyone else. Requests that reward
+        volume, body weight or calories, or that would make a habit visible to
+        others, will be declined on those grounds rather than on merit.
   - type: textarea
     id: problem
     attributes:

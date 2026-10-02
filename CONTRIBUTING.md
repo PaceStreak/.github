@@ -1,13 +1,12 @@
 # Contributing
 
-Thanks for looking. PaceStreak is early and built in the open.
+Thanks for looking. PaceStreak is built in the open.
 
 ## Before you start
 
-**Open an issue first for anything non-trivial.** The product direction is still
-moving, and a pull request that arrives with no prior discussion may be turned
-down for reasons that have nothing to do with its quality. A short issue saves
-you that.
+**Open an issue first for anything non-trivial.** A pull request that arrives
+with no prior discussion may be turned down on scope, for reasons that have
+nothing to do with its quality. A short issue saves you that.
 
 Small, obvious fixes — a typo, a broken link, a clear bug with a one-line fix —
 can go straight to a pull request.
@@ -17,8 +16,8 @@ can go straight to a pull request.
 | You want to change | Go to |
 | --- | --- |
 | The public site at `www.pacestreak.com` | [`web`](https://github.com/PaceStreak/web) |
-| The product itself | [`app`](https://github.com/PaceStreak/app) — **not built yet** |
-| The backend | [`api`](https://github.com/PaceStreak/api) — **not built yet** |
+| The product itself, at `app.pacestreak.com` | [`app`](https://github.com/PaceStreak/app) |
+| The backend, at `api.pacestreak.com` | [`api`](https://github.com/PaceStreak/api) |
 | The blog at `blog.pacestreak.com` | [`blog`](https://github.com/PaceStreak/blog) |
 | Monitoring or the status page | [`status`](https://github.com/PaceStreak/status) |
 | DNS, Cloudflare, runbooks | [`infra`](https://github.com/PaceStreak/infra) |
@@ -48,10 +47,14 @@ Two things that are not negotiable:
 - **No third-party runtime dependencies on any site.** Every one of them ships
   `default-src 'self'`, enforced in production. If you add a font CDN or an
   analytics script it will be blocked, and blocked silently.
-- **Never hand-roll cache busting.** `web`, `app` and `blog` build with Astro,
-  which content-hashes asset filenames. The hand-rolled script this rule used to
-  point at was removed for a reason: forgetting to run it once shipped new
-  markup against a four-hour-old cached stylesheet.
+- **Never hand-roll cache busting.** `web` and `blog` build with Astro and `app`
+  with Vite, both of which content-hash asset filenames. A hand-rolled script
+  once shipped new markup against a four-hour-old cached stylesheet.
+- **Habits are never shown to anyone else.** No habit name, amount or slip may
+  reach a feed, profile, group, leaderboard or badge. Someone breaking a habit
+  must never be outed by the product.
+- **Tests run against a throwaway database.** The API suite truncates every
+  table in the database it points at. See the `api` README.
 
 ## Reporting bugs
 

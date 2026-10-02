@@ -3,9 +3,9 @@ contact_links:
   - name: Security vulnerability
     url: https://github.com/PaceStreak/.github/blob/main/SECURITY.md
     about: Do NOT open a public issue. Email hello@pacestreak.com instead.
-  - name: Early access / general questions
-    url: mailto:hello@pacestreak.com
-    about: Ask about early access, or anything that is not a bug.
+  - name: Questions
+    url: https://www.pacestreak.com/faq
+    about: How something works, or why. Not answered there? Email hello@pacestreak.com.
   - name: Current service status
     url: https://status.pacestreak.com
     about: Check whether something is already known to be down before reporting it.
