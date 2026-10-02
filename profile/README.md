@@ -47,7 +47,7 @@ of filled squares is a much harder thing to abandon than a to-do list.
   calendar, imports from watches and other habit apps, and deletes for real.
 
 No ads, no analytics, no third-party scripts: every site ships
-`default-src 'self'`, enforced.
+`default-src 'self'`, enforced. And every line of it is public, under AGPL-3.0.
 
 ## Repositories
 

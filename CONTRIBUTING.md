@@ -1,6 +1,7 @@
 # Contributing
 
-Thanks for looking. PaceStreak is built in the open.
+Thanks for looking. PaceStreak is built in the open: every repository is
+public under AGPL-3.0.
 
 ## Before you start
 
