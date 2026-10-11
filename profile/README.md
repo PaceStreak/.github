@@ -70,7 +70,7 @@ No ads, no analytics, no third-party scripts: every site ships
 www.pacestreak.com    web     static marketing site    Cloudflare Pages
 blog.pacestreak.com   blog    static blog              Cloudflare Pages
 app.pacestreak.com    app     the product (PWA)        Cloudflare Pages
-api.pacestreak.com    api     FastAPI + worker         a VM behind a Cloudflare Tunnel
+api.pacestreak.com    api     FastAPI + worker         FastAPI Cloud
 status.pacestreak.com status  uptime history           GitHub Pages
 ```
 
